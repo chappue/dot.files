@@ -1,0 +1,18 @@
+@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
+
+#main-window[tabsontop="true"][sizemode="normal"] #TabsToolbar {
+    margin-left: 98px !important;
+    margin-right: 75px !important;
+    background-color: transparent !important;
+    height: 30px !important;
+}
+
+#main-window[tabsontop="true"][sizemode="normal"] #toolbar-menubar {
+    margin-left: 98px !important;
+    margin-top: -28px !important;
+}
+
+#main-window[tabsontop="true"][sizemode="normal"] #appmenu-button-container {
+    position: relative !important;
+    z-index: 2 !important;
+}
