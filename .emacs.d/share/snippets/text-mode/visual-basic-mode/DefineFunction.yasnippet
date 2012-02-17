@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: DefineFunction
+# key: func
+# --
+'-----------------------------------------------------------------------------------------
+' ${1:Summary}
+'-----------------------------------------------------------------------------------------
+${2:$$(yas/choose-value '("Private " "Public " ""))}Function ${3:FunctionName}(${4:arguments}) As ${5:TypeName}
+    $0
+End Sub

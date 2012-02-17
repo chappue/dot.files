@@ -1,0 +1,9 @@
+# path setting
+export PATH="~/Binaries/bin:$PATH"
+export LD_LIBRARY_PATH="~/Binaries/libexec:$LD_LIBRARY_PATH"
+
+# rvm
+if [[ -s "$HOME/.rvm/scripts/rvm" ]] ; then source "$HOME/.rvm/scripts/rvm" ; fi # Load RVM function
+
+# Synergy
+synergyc 192.168.1.2

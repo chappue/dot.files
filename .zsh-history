@@ -1,0 +1,441 @@
+: 1320584194:0;echo '[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function' >> ~/.zsh/zshrc.zircon
+: 1320584206:0;cat ~/.zsh/zshrc.zircon
+: 1320584272:0;type rvm -1
+: 1320584278:0;type rvm -l
+: 1320584281:0;type rvm
+: 1320584304:0;rvm requirements
+: 1320584318:0;rvm list knowsn
+: 1320586088:0;rvm install 1.9.2
+: 1320586401:0;rvm 1.9.2 --default
+: 1320587002:0;apt-get install zlib1g-dev
+: 1320587005:9;sudo apt-get install zlib1g-dev
+: 1320587041:0;cd ~/.rvm/src/ruby-1.9.2-p290/ext/zlib
+: 1320587121:276;gem install rails
+: 1320587480:0;apt-cache search libmysql-ruby
+: 1320587573:0;apt-cache search libmysqlclient
+: 1320587603:8;sudo apt-get install libmysqlclient-dev
+: 1320587645:24;sudo apt-get install libmysql-ruby1.9.1
+: 1320587705:32;rails new rails3_test -d mysql
+: 1320587941:1691;git clone git://git.savannah.gnu.org/emacs.git
+: 1320590710:1;apt-cache search autoconf
+: 1320590725:0;apt-get install autoconf
+: 1320590728:24;sudo apt-get install autoconf
+: 1320590862:1;apt-cache search makeinfo
+: 1320590901:7;./configure --without-makeinfo
+: 1320591078:0;apt-cache X-window
+: 1320591081:0;apt-cache X
+: 1320591092:0;apt-cache search x-window
+: 1320591141:1;apt-cache search x-dev
+: 1320591169:1;apt-cache search window
+: 1320591352:0;apt-cache search libgtk
+: 1320667961:1;find /usr/local/bin -iname "*terminal*"
+: 1320667967:0;find /usr/bin -iname "*terminal*"
+: 1320667976:1;gnome-terminal
+: 1320668026:0;find /usr/bin -iname "*synergy*"
+: 1320668197:2;ping 192.168.1.2
+: 1320668206:0;ping trona
+: 1320668209:1;ping zircon
+: 1320668493:108;vi .synergy.conf
+: 1320668674:0;synergyc -f --config ~/.synergy.conf 192.168.1.2
+: 1320668686:0;synergyc --help
+: 1320668776:10;synergyc -f 192.168.1.2
+: 1320668797:20;vi .zsh/zshrc.zircon
+: 1320671251:0;cd source
+: 1320671255:0;cd rails3_test
+: 1320671301:4;git clone https://github.com/sowawa/rails3.0_sample.git
+: 1320671360:26;git clone https://github.com/spree/spree.git
+: 1320671429:0;ls spree
+: 1320671657:178;sudo apt-get build-dep emacs
+: 1320671856:10;./autogen.sh
+: 1320671872:31;./configure
+: 1320672653:12;sudo make install
+: 1320672690:0;mkdir binaries
+: 1320672694:0;cd binaries
+: 1320672709:0;rm -rf binaries
+: 1320672719:0;mkdir Bineries
+: 1320672723:0;cd source/emacs
+: 1320672752:0;make install --prefix=~/Bineries
+: 1320672782:28;./configure --prefix=~/Bineries
+: 1320673042:0;ls ~/Bineries
+: 1320673045:0;ls ~/Bineries/bin
+: 1320673313:0;cd ~/Bineries
+: 1320673617:26;vi ~/.zshenv
+: 1320673658:13;vi ~/.zsh/zshrc.trona.local
+: 1320673743:0;grep Bineries ~/.zsh/zshrc.trona.local
+: 1320673751:0;grep Bin ~/.zsh/zshrc.trona.local
+: 1320673801:0;mv Bineries Binaries
+: 1320673827:12;vi ~/.zsh/zshrc.zircon
+: 1320673872:0;export
+: 1320673879:0;export |grep -i path
+: 1320673884:0;export |grep path -i
+: 1320673990:0;cd ~/binaries/bin
+: 1320674003:0;cd Binaries/bin
+: 1320674007:0;./emacs
+: 1320674224:0;ls /usr/local/bin
+: 1320674232:0;la /usr/local/bin
+: 1320674321:1;rm -r Binaries
+: 1320674333:0;mv source Sources
+: 1320674338:0;cd emacs
+: 1320674366:28;./configure --with-x
+: 1320674460:683;make bootstrap
+: 1320675228:35;sudo paco -D make install
+: 1320676232:0;ls Templates
+: 1320676236:0;cd Do
+: 1320676314:0;ps ax |grep emacs
+: 1320676358:0;cd ~/.emacs.d
+: 1320676533:0;mkdir local-lisp
+: 1320676567:0;mkdir bin
+: 1320676570:0;mkdir private
+: 1320676617:0;ls lisp/snippets/
+: 1320676910:0;mv lisp/snippets share/snippets
+: 1320676913:0;ls share
+: 1320676915:0;ls share/snippets
+: 1320676928:2993;/usr/local/bin/emacs
+: 1320679940:1;find . -iname "*.el" -print0 |xargs -0 grep scim
+: 1320681073:54;sudo apt-get install mule-ucs anthy-el
+: 1320681421:0;ls rails3.0_sample
+: 1320681426:0;ls spree/core
+: 1320759324:0;killall synergyc
+: 1320759328:0;ps ax |grep syn
+: 1320759337:0;synergyc 192.168.1.2
+: 1320763897:0;cd rails3.0_sample
+: 1320763902:0;cd ../rails3_test
+: 1320764068:0;pwd
+: 1320764084:0;find ~/.rvm -iname "rails"
+: 1320764166:0;source ~/.rvm/scripts/rvm
+: 1320764187:162;bash
+: 1320764371:0;cd Sources/rails3_test
+: 1320764883:0;rm -r rails3_test
+: 1320764915:12;sudo apt-get install sqlite3 libsqlite3-dev
+: 1320764938:31;rails new railstest
+: 1320765078:0;cd railstest
+: 1320765452:12;sudo apt-get install libssl-dev
+: 1320765579:0;rvm usage
+: 1320765716:0;cd ~/.rvm/src/ruby-1.9.2-p290/ext/openssl
+: 1320765828:0;cd spree/core
+: 1320765855:0;cd ../rails3.0_sample
+: 1320767847:5;gem install fcgi -v 0.8.8
+: 1320768003:13;sudo apt-get install libfcgi-dev
+: 1320768021:8;gem install fcgi -v '0.8.8'
+: 1320847408:0;cd ../spree
+: 1321332041:0;cd Sources
+: 1321332047:1;cd spree
+: 1321332957:0;mv spree spree-git
+: 1321333242:1;apt-cache search imagemagick
+: 1321333372:4;sudo apt-get install imagemagick
+: 1321333478:1;gem 'spree'
+: 1321333686:3;gem install nokogiri -v '1.5.0'
+: 1321333965:1;sudo apt-get install libxslt libxslt-dev
+: 1321333984:1;apt-cache search libxslt
+: 1321334107:36;sudo apt-get install build-essential openssl libreadline6 libreadline6-dev curl git-core zlib1g zlib1g-dev libssl-dev libyaml-dev libsqlite3-0 libsqlite3-dev sqlite3 libxml2-dev libxslt-dev autoconf libc6-dev ncurses-dev automake libtool bison subversion
+: 1321335815:65;mysql -u overdose -p
+: 1321336274:30;gem install therubyracer
+: 1321336749:0;rvm install rails -v 3.0.0
+: 1321336832:0;rvm gemset create rails-3.0.0
+: 1321336844:0;rvm list
+: 1321336906:325;gem install rails -v 3.0.0
+: 1321337588:0;local rails
+: 1321337593:0;locale rails
+: 1321337735:0;whitch gem
+: 1321337758:0;local result
+: 1321337830:0;rvm gemset use rails-3.0.0; rails --version
+: 1321337873:0;ruby --version
+: 1321337921:8;find ~/.rvm -type f -print0 |xargs -0 grep gem
+: 1321337941:0;rvm list known
+: 1321338931:0;rvm install openssl
+: 1321338963:0;rvm package install openssl
+: 1321338981:0;cd ~/.rvm/src/ruby-1.9.2-p180/ext/openssl
+: 1321339036:0;rvm pkg install openssl
+: 1321339432:0;rvm install 1.9.2-p180
+: 1321339555:0;which rvm
+: 1321339562:0;which gem
+: 1321339617:103;find ~/ -type f -print0 |xargs -0 grep command\ gem
+: 1321339775:30;gem install rails --version 3.0.0
+: 1321339819:0;source ~/.zsh/zshrc.zircon
+: 1321339927:15;gem uninstall rails 3.1.1
+: 1321340010:1;gem list |grep rails
+: 1321340116:0;mv overdose/config/database.yml ./
+: 1321340178:0;ruby -v
+: 1321340181:0;which ruby
+: 1321340185:0;which rails
+: 1321340216:0;find ~/.rvm/gems -type f -name "rails"
+: 1321340252:0;rvm gemset list
+: 1321340292:0;/home/chappue/.rvm/gems/ruby-1.9.2-p290@rails-3.0.0/bin/rails -v
+: 1321340308:0;find ~/.rvm/gems -type f -name "rails" |grep bin
+: 1321340348:0;rvm gemset use glocal
+: 1321340366:0;rvm use ruby-1.9.2-p290
+: 1321340403:1;/home/chappue/.rvm/gems/ruby-1.9.2-p290@rails-3.0.0/gems/rails-3.0.0/bin/rails -v
+: 1321340415:0;/home/chappue/.rvm/gems/ruby-1.9.2-p290@rails-3.0.0/gems/rails-3.1.1/bin/rails -v
+: 1321340437:0;/home/chappue/.rvm/gems/ruby-1.9.2-p290/gems/rails-3.0.9/bin/rails -v
+: 1321340455:0;/home/chappue/.rvm/gems/ruby-1.9.2-p290/bin/rails -v
+: 1321340554:0;rvm use ruby-1.9.2-p290@rails-3.0.0 --default
+: 1321340566:28;gem install rails --version=3.0.0
+: 1321340814:22;gem install rails -y -v 3.0.0
+: 1321340855:20;gem install rails -v=3.0.0
+: 1321340883:0;rials -v
+: 1321340886:0;rails -v
+: 1321341022:1;rails _3.0.0_ -v
+: 1321341056:1;rails _3.0.0_ new overdose -d mysql
+: 1321341146:0;rm database.yml
+: 1321341351:24;gem install activerecord-mysql2-adapter
+: 1321341468:56;gem install activerecord
+: 1321341634:0;gem list capistrano
+: 1321341643:1;gem list bundler
+: 1321341700:0;find . -iname "deploy.rb"
+: 1321341740:1;gem list |grep mysql
+: 1321342411:59;rails server
+: 1321342739:2;rake db:bootstrap
+: 1321342851:1;rake spree_sample:load
+: 1321342942:3;bundle exec rake assets:precomple RAILS_ENV=development RAILS_ASSETS_NONDIGEST=true
+: 1321343043:0;cd config
+: 1321343055:0;mv routes.rb routes.rb_orig
+: 1321343767:0;ls app
+: 1321343773:0;ls app/models
+: 1321345836:50;bundle install vender/bundle
+: 1321345931:1;rm -rf vender
+: 1321345937:48;bundle install vendor/bundle
+: 1321346360:46;gem install spree
+: 1321346426:1;spree overdose
+: 1321346437:0;which spree
+: 1321346480:60;gem install heroku
+: 1321346667:0;mv overdose.orig overdose
+: 1321346934:1;spree mystore
+: 1321346946:0;rm -rf railstest
+: 1321347082:0;cp overdose/Gemfile mystore/Gemfile
+: 1321347094:0;cp overdose/config/database.yml mystore/config/database.yml
+: 1321347838:12;gem install sprre --version='0.70.1'
+: 1321347857:41;gem install spree --version='0.70.1'
+: 1321347903:1;gem list rails -l
+: 1321347908:0;gem list
+: 1321348007:6;gem install spree --version='0.7.0'
+: 1321348022:1;gem list |grep spree
+: 1321348037:10;gem install spree_api --version='0.7.0'
+: 1321348722:33;rails new mystore
+: 1321349472:0;cd mystore
+: 1321349669:33;rails new mystore -d mysql
+: 1321349706:0;cd overdose.orig
+: 1321349718:0;rm -rf mystore
+: 1321349727:28;rails new overdose -d mysql
+: 1321349819:0;cp overdose.orig/config/database.yml overdose/config/database.yml
+: 1321350139:17;rake spree:install --trace
+: 1321350278:17;rake db:create
+: 1321350511:125;bundle exec rake spree_sample:load
+: 1321350824:56;bundle exec rake assets:precompile RAILS_ENV=development RAILS_ASSETS_NONDIGEST=true
+: 1321350939:50;rake assets:clean
+: 1321362793:0;mv overdose overdose.orig
+: 1321363513:9;gem install sqlite3-ruby
+: 1321363581:5;sudo apt-get install sqlite3
+: 1321363798:0;rm -rf overdose
+: 1321364020:33;rails new overdose
+: 1321364069:0;git add.
+: 1321364146:0;cd overdose
+: 1321364151:50;rails g spree:site
+: 1321364214:17;rake spree:install
+: 1321364417:57;rake db:migrate
+: 1321364483:72;rake db:seed
+: 1321364568:58;rake db:admin:create
+: 1321364909:0;git commit -m "Added Spree"
+: 1321364965:0;git commit -m "heroku tweaks"
+: 1321365023:0;git config --global user.name "Kazuhito TANEMURA"
+: 1321365039:0;git config --global user.email chappue@gmail.com
+: 1321365078:0;git commit --amend --reset-author -m "heroku tweaks"
+: 1321365235:6;sudo apt-get install readline-dev
+: 1321365265:2;apt-cache search readline
+: 1321365284:13;sudo apt-get install libreadline-dev
+: 1321365475:0;cd ~/.rvm/src/ruby-1.9.2-p290/ext/readline
+: 1321365481:6;ruby extconf.rb
+: 1321365488:1;make
+: 1321365492:0;make install
+: 1321365501:56;heroku create overdose
+: 1321365880:1;heroku stack
+: 1321365926:2;heroku stack --app overdose
+: 1321366668:6;git pull git@heroku.com:overdose.git
+: 1321367011:6;git remote show heroku
+: 1321367369:0;git remote rm heroku
+: 1321367388:0;git remote add heroku git @heroku.com:overdose.git
+: 1321367446:0;git list
+: 1321367452:0;git
+: 1321367486:0;git init
+: 1321367505:0;git commit -m "First commit"
+: 1321367530:0;git remote add heroku git@heroku.com:overdose.git
+: 1321367988:17;heroku rake db:bootstrap
+: 1321368181:0;git pull
+: 1321368194:0;git remote -v
+: 1321368208:0;git remote show
+: 1321368789:28;sudo apt-get install libpq-dev
+: 1321368827:24;gem install pg
+: 1321369056:6;git pull heroku
+: 1321369114:0;git status
+: 1321369303:0;git commit -m "for db:migrate error"
+: 1321369415:315;heroku rake db:migrate
+: 1321369752:6;heroku open
+: 1321369829:215;bundle exec rake assets:precompile RAILS_ENV=production
+: 1321370049:0;git add .
+: 1321370083:0;git commit -m "precompile error fixed"
+: 1321370089:28;git push heroku master
+: 1321373533:3;heroku addons:add piggyback_ssl
+: 1321686238:27;rake spree_i18n:update_default
+: 1321686281:21;rake spree_i18n:stats
+: 1321687700:19;rake spree_i18n:new LOCALE=ja
+: 1321689086:0;ls script
+: 1321689118:155;rails console
+: 1321447835:160;sqlite3 overdose_development
+: 1321448043:72;sqlite3 db/development.sqlite3
+: 1321448120:780;sqlite3 development.sqlite3
+: 1321448902:0;ls db
+: 1321683830:1;mv ~/Downloads/spree-spree_i18n-7227a5b.zip config/locales
+: 1321683833:0;cd config/locales
+: 1321683847:0;ll
+: 1321683874:0;cd locales
+: 1321683879:0;cd ~
+: 1321683895:20;find . -iname "spree-spree_i18n*"
+: 1321683970:0;mv Sources/overdose.orig/config/locales/spree-spree_i18n-7227a5b.zip Sources/overdose/config/locales/spree-spree_i18n-7227a5b.zip
+: 1321683978:0;ls Sources/overdose/config/locales
+: 1321683985:0;cd Sources/
+: 1321683990:0;rm -rf overdose.orig
+: 1321683994:0;cd overdose/config/locales
+: 1321683999:0;unzip spree-spree_i18n-7227a5b.zip
+: 1321684008:0;rm spree-spree_i18n-7227a5b.zip
+: 1321684257:0;cd spree-spree_i18n-7227a5b
+: 1321684261:0;ls default
+: 1321684270:0;ls config
+: 1321684274:0;ls config/locales
+: 1321684929:0;mv -r spree-spree_i18n-7227a5b ~/Downloads
+: 1321684942:0;mv spree-spree_i18n-7227a5b ~/Downloads/
+: 1321684963:0;cp ~/Downloads/spree-spree_i18n-7227a5b/config/locales/*.yml ./
+: 1321694958:1;cd ../spree-git
+: 1321694966:0;ls sample
+: 1321697123:1;find ~/.emacs.d -iname "*el" -print0 |xargs -0 grep make-local-hook
+: 1321697232:0;ls ~/
+: 1321704904:0;gnome-font-viewer&
+: 1321704972:0;fc-list
+: 1321698785:0;rm tmux-*
+: 1321698820:0;find . -iname "versionfile"
+: 1321698835:0;find . -iname "theme"
+: 1321698845:0;find . -iname "themes"
+: 1321699837:0;find . -iname "Spree::*"
+: 1321699862:1;find . -print0 |xargs -0 grep "Spree::"
+: 1321701119:37;bundle install
+: 1321703325:5349;rails s
+: 1321694527:0;cd Sources/overdose
+: 1321694582:0;la
+: 1321694824:0;source ~/.zshrc
+: 1321694830:4;tmux -v
+: 1321698276:0;popd
+: 1321698656:10019;tmux
+: 1321753882:1;apt-cache search libwmf
+: 1321753902:1;apt-cache search psotedit
+: 1321753924:1;apt-cache search sketch
+: 1321754018:0;ls Downloads
+: 1321754043:0;cp ~/Dropbox/overdose/Bar\ Dose\(black\).ai ./
+: 1321754062:0;mv Bar\ Dose\(black\).ai BarDose_black.ai
+: 1321754076:296914;python ai2svg.py BarDose_black.ai
+: 1322051003:0;rm BarDose_black.ai
+: 1322051005:0;rm ai2svg.py
+: 1322051012:0;ls spree-spree_i18n-7227a5b
+: 1322051016:0;rm spree-spree_i18n-7227a5b
+: 1322051020:0;rm -rf spree-spree_i18n-7227a5b
+: 1322051029:0;cd ../Sources
+: 1322148016:0;ls ~/Downloads
+: 1322148040:2;tar xvf ~/Downloads/substruct_rel_1-3-1.tar.gz
+: 1322148047:0;cd substruct_rel_1-3-1
+: 1322892209:0;cd Downloads
+: 1322892640:43;ftp overdose-sb.sakura.ne.jp
+: 1322892691:39;ssh overdose-sb.sakura.ne.jp
+: 1322892737:1252;ssh overdose-sb@overdose-sb.sakura.ne.jp
+: 1322894005:0;mv eccube-2.11.4.zip ~/Sources
+: 1322894014:0;cd ~/Sources
+: 1322894022:1;rm -rf eccube-2.11.4
+: 1322894029:1;unzip eccube-2.11.4.zip
+: 1322894032:0;rm eccube-2.11.4.zip
+: 1322894035:0;cd eccube-2.11.4
+: 1325165138:0;cd Sources/eccube-2.11.4
+: 1325165156:6;find . -print0 |xargs -0 grep html
+: 1325165189:0;ls /usr/local/share/emacs/24.0.91/lisp/
+: 1325165281:0;cd ../emacs/lisp
+: 1325165291:19;find . -print0 |xargs -0 grep make-local-hook
+: 1326293299:1;apt-cache search lamp
+: 1326293319:1;apt-cache search tasksel
+: 1326293358:1;apt-cache search apache
+: 1326293364:1;apt-cache search mysql
+: 1326293590:1;apt-cache search wlmp
+: 1326293600:1;apt-cache search lighttpd
+: 1326294256:2;apt-cache search apache1.3
+: 1326294260:1;apt-cache search apache1
+: 1326294268:1;apt-cache search apache |grep 1.3
+: 1326294274:1;apt-cache search apache2
+: 1326294301:0;apt-get install apache2
+: 1326294304:34;sudo apt-get install apache2
+: 1326294506:1;apt-cache search php5
+: 1326294565:29;sudo apt-get install php5
+: 1326294611:6;sudo apt-get install php5-mysql
+: 1326294639:0;sudo apt-get install mysql-server
+: 1326294743:0;ls /usr
+: 1326294870:3;vi /etc/apache2/httpd.conf
+: 1326294911:0;ls /etc
+: 1326294919:0;ls /
+: 1326294923:0;ls /home
+: 1326294929:0;ls /opt
+: 1326294931:0;ls /root
+: 1326294938:0;ls /var
+: 1326294943:0;ls /var/www
+: 1326295026:0;ls /usr/local
+: 1326295033:0;ls /usr/local/var
+: 1326295040:0;mkdir /usr/local/www
+: 1326295043:0;sudo mkdir /usr/local/www
+: 1326295050:17;vi /etc/apache2/apache2.conf
+: 1326295129:0;source ~/.zshenv
+: 1326295155:0;apache2ctl status
+: 1326295162:0;sudo apache2ctl status
+: 1326295177:0;sudo apache2ctl restart
+: 1326295190:0;apache2 restart
+: 1326295197:0;cd
+: 1326295203:0;ps -ax |grep apache
+: 1326295266:0;sls /usr/local/etc
+: 1326295268:0;ls /usr/local/etc
+: 1326295282:1;find /etc -iname "httpd"
+: 1326295335:0;apachectl restart
+: 1326295380:46;sudo vi /etc/apache2/apache2.conf
+: 1326295524:23;sudo vi /etc/hosts
+: 1326295588:40;sudo vi /etc/apache2/sites-enabled/000-default
+: 1326295632:0;sudo apachectl restart
+: 1326295653:0;cp /var/www/index.html /usr/local/www
+: 1326295658:0;sudo cp /var/www/index.html /usr/local/www
+: 1326295691:0;ls Sources/eccube-2.11.4
+: 1326295757:0;ll /usr/local
+: 1326295775:0;chmod 777 /usr/local/www
+: 1326295778:0;sudo chmod 777 /usr/local/www
+: 1326295789:0;ll /usr/local/www/index.html
+: 1326295850:0;ls /usr/local/www/shop
+: 1326295989:0;mysql
+: 1326296556:1;apt-cache search myadmin
+: 1326296570:69;sudo apt-get install phpmyadmin
+: 1326297367:29;mysql -u root -p
+: 1326297742:12;sudo vi /etc/mysql/my.cnf
+: 1326297756:0;mysqld restart
+: 1326298154:0;cp Sources/eccube-2.11.4/html/install/index.php /usr/local/www/shop/install/
+: 1326298732:0;rm -rf /usr/local/www/shop
+: 1326298735:0;rm -rf /usr/local/www/data
+: 1326298739:0;cp -rp Sources/eccube-2.11.4/html /usr/local/www/shop
+: 1326298744:1;cp -rp Sources/eccube-2.11.4/data /usr/local/www/data
+: 1326298916:0;rm /usr/local/www/shop/install/index.php
+: 1327584091:0;cd .emacs.d
+: 1327584109:0;rm -rf auto-save-list
+: 1327584115:0;rm -rf session.107e507f0b7f983445132214818951519200000014390044
+: 1327584117:0;ls
+: 1327584127:0;ls eshell
+: 1327584680:0;cd ../
+: 1327584694:0;mv .emacs.d/ .emacs.d.orig
+: 1327584747:0;ls .emacs.d*
+: 1327585238:0;find ~/.emacs.d.orig/lisp/org -print0 |xargs -0 grep auto-save
+: 1327585292:0;rm -rf ~/.emacs.d
+: 1327585302:0;mv ~/.emacs.d.orig ~/.emacs.d
+: 1327585503:1;find .emacs.d -print0 |xargs -0 grep add-local-hook
+: 1327589488:0;ls /usr/local/www
+: 1327589492:0;ls /usr/local/www/data
+: 1327589495:0;ls /usr/local/www/data/logs
+: 1327589629:0;ls -l /usr/local/www/shop/
+: 1327589634:0;ls -l /usr/local/www/shop/admin
+: 1327590015:0;ll /usr/local/www/data/cache/mtb_constants.php
+: 1327590059:31;sudo vi /usr/local/www/data/cache/mtb_constants.php
+: 1328458227:0;exit

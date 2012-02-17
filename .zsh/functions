@@ -1,0 +1,75 @@
+# zsh functions -*- mode: shell-script; coding: euc-jp -*-
+
+#_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
+# functions
+
+  # use jman when installed
+  if [[ -x `where jman` ]]; then
+    alias man="jman"
+  fi
+
+  # history search
+  function h() {
+    if [ "$1" ]; then
+      builtin history -n 0 | grep "$1";
+    else
+      builtin history -mi;
+    fi
+  }
+
+  # Top 8 of CPU
+  function pst() {
+    ps -auxw | head -n 1
+    ps -auxw | sort -r -n +2 | grep "ps -auxw" -v | grep "grep" -v| head -n 10
+  }
+
+  # Top 8 of memory
+  function psm() {
+    ps -auxw | head -n 1
+    ps -auxw | sort -r -n +3 | grep "ps -auxw" -v | grep 'grep' -v | head -n 10
+  }
+
+  # sarch process
+  function psg() {
+    ps -auxw | grep $* | grep "ps -auxw" -v | grep "grep" -v
+  }
+
+  # convert EUC(charactar code)
+  function euc() {
+    for i in $@; do;
+    nkf -e $i >! ~/tmp/$$.euc
+    mv -f ~/tmp/$$.euc $i
+    done;
+  }
+
+  # convert Shift_JIS(charactar code)
+  function sjis() {
+    for i in $@; do;
+    nkf -s $i >! ~/tmp/$$.sjis
+    mv -f ~/tmp/$$.sjis $i
+    done;
+  }
+
+  # convert Win_Shift_JIS(charactar code)
+  function sjis_win() {
+    for i in $@; do;
+    nkf -s -Lw $i >! ~/tmp/$$.sjis
+    mv -f ~/tmp/$$.sjis $i
+    done;
+  }
+
+  # convert JIS(charactar code)
+  function jis() {
+    for i in $@; do;
+    nkf -j $i >! ~/tmp/$$.jis
+    mv -f ~/tmp/$$.jis $i
+    done;
+  }
+
+  #convert UTF-8(charactar code)
+  function utf() {
+    for i in $@; do;
+    nkf -w $i >! ~/tmp/$$.utf
+    mv -f ~/tmp/$$.utf $i
+    done;
+  }
