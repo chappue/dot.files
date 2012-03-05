@@ -11,7 +11,6 @@
 ;; keybinding
 (require 'init-keybind)
 
-
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; library loading
 
@@ -158,6 +157,21 @@
 
 ;; auto-install
 (require 'init-auto-install)
+
+;; deferred
+(require 'init-deferred)
+
+;; evernote-mode
+(require 'init-evernote)
+
+;; rst-mode
+(require 'init-rst)
+
+;; cscope
+(require 'init-xcscope)
+
+;; popwin
+(require 'init-popwin)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; os specifcation

@@ -1,30 +1,51 @@
 ;; -*- mode:Emacs-Lisp coding:utf-8 -*-
 
-;; cscope
-(setq cscope-program "c:/tanemura_work/application/cygwin/usr/local/bin/cscope.exe")
+;; FONTS
+(when (>= emacs-major-version 23)
+ (set-face-attribute 'default nil
+                     :family "ÇlÇr ÉSÉVÉbÉN"
+                     :height 110)
+ (set-fontset-font
+  (frame-parameter nil 'font)
+  'japanese-jisx0208
+  '("ÇlÇr ÉSÉVÉbÉN" . "iso10646-1"))
+ (set-fontset-font
+  (frame-parameter nil 'font)
+  'japanese-jisx0212
+  '("ÇlÇr ÉSÉVÉbÉN" . "iso10646-1"))
+ (set-fontset-font
+  (frame-parameter nil 'font)
+  'mule-unicode-0100-24ff
+  '("ÇlÇr ÉSÉVÉbÉN" . "iso10646-1"))
+ )
 
-(setq cscope-database-regexps nil)
-(append-cscope-database-regexp "^c:/tanemura_work/source/hmi/" '(t ("-L" "-k")) '("C:/Program Files/Microsoft Visual Studio .NET/Vc7" ("-L" "-k")))
-(append-cscope-database-regexp "^c:/tanemura_work/source/BESTEM/EWS/" '(t ("-L" "-k")) '("C:/Program Files/Microsoft Visual Studio .NET/Vc7" ("-L" "-k")))
-(append-cscope-database-regexp "^c:/tanemura_work/source/BESTEM/BakApp/" '(t ("-L" "-k")) '("C:/Program Files/Microsoft Visual Studio .NET/Vc7" ("-L" "-k")))
-(append-cscope-database-regexp "^c:/tanemura_work/source/misc/msvc/" '("C:/Program Files/Microsoft Visual Studio .NET/Vc7" ("-L" "-k")) '(t ("-L" "-k")))
-(append-cscope-database-regexp "^c:/tanemura_work/document/work/" '(t ("-L" "-k")) '("C:/Program Files/Microsoft Visual Studio .NET/Vc7" ("-L" "-k")))
-;; (append-cscope-database-regexp "^c:/Program Files/mmi-test/" '(t ("-L" "-k")) '("C:/Program Files/Microsoft Visual Studio .NET/Vc7" ("-L" "-k")))
-(append-cscope-database-regexp "^c:/tanemura_work/source/BESTEM/controller/src/D01Np"
-                               (mapcar (lambda (x) (list x '("-L" "-k"))) (cscope-search-dir-list "c:/tanemura_work/source/BESTEM/controller/src/D01Np" 2))
-                               '("C:/tanemura_work/source/BESTEM/controller/src/QNX" ("-L" "-k")))
-(append-cscope-database-regexp "^c:/tanemura_work/source/BESTEM/controller/src/D01R"
-                               (mapcar (lambda (x) (list x '("-L" "-k"))) (cscope-search-dir-list "c:/tanemura_work/source/BESTEM/controller/src/D01R" 2))
-                               '("C:/tanemura_work/source/BESTEM/controller/src/QNX" ("-L" "-k")))
-(append-cscope-database-regexp "^c:/tanemura_work/source/BESTEM/controller/src/D01"
-                               (mapcar (lambda (x) (list x '("-L" "-k"))) (cscope-search-dir-list "c:/tanemura_work/source/BESTEM/controller/src/D01" 2))
-                               '("C:/tanemura_work/source/BESTEM/controller/src/QNX" ("-L" "-k")))
-(append-cscope-database-regexp "^c:/tanemura_work/source/BESTEM/controller/src/D02"
-                               (mapcar (lambda (x) (list x '("-L" "-k"))) (cscope-search-dir-list "c:/tanemura_work/source/BESTEM/controller/src/D02" 2))
-                               '("C:/tanemura_work/source/BESTEM/controller/src/QNX" ("-L" "-k")))
-(append-cscope-database-regexp "^c:/tanemura_work/source/BESTEM/controller/src/D03Hp"
-                               (mapcar (lambda (x) (list x '("-L" "-k"))) (cscope-search-dir-list "c:/tanemura_work/source/BESTEM/controller/src/D03Hp" 2))
-                               '("C:/tanemura_work/source/BESTEM/controller/src/QNX" ("-L" "-k")))
+(when (locate-library "xcscope")
+  ;; cscope
+  (setq cscope-program "c:/tanemura_work/application/cygwin/usr/local/bin/cscope.exe")
+
+  (setq cscope-database-regexps nil)
+  (append-cscope-database-regexp "^c:/tanemura_work/source/hmi/" '(t ("-L" "-k")) '("C:/Program Files/Microsoft Visual Studio .NET/Vc7" ("-L" "-k")))
+  (append-cscope-database-regexp "^c:/tanemura_work/source/BESTEM/EWS/" '(t ("-L" "-k")) '("C:/Program Files/Microsoft Visual Studio .NET/Vc7" ("-L" "-k")))
+  (append-cscope-database-regexp "^c:/tanemura_work/source/BESTEM/BakApp/" '(t ("-L" "-k")) '("C:/Program Files/Microsoft Visual Studio .NET/Vc7" ("-L" "-k")))
+  (append-cscope-database-regexp "^c:/tanemura_work/source/misc/msvc/" '("C:/Program Files/Microsoft Visual Studio .NET/Vc7" ("-L" "-k")) '(t ("-L" "-k")))
+  (append-cscope-database-regexp "^c:/tanemura_work/document/work/" '(t ("-L" "-k")) '("C:/Program Files/Microsoft Visual Studio .NET/Vc7" ("-L" "-k")))
+  ;; (append-cscope-database-regexp "^c:/Program Files/mmi-test/" '(t ("-L" "-k")) '("C:/Program Files/Microsoft Visual Studio .NET/Vc7" ("-L" "-k")))
+  (append-cscope-database-regexp "^c:/tanemura_work/source/BESTEM/controller/src/D01Np"
+                                 (mapcar (lambda (x) (list x '("-L" "-k"))) (cscope-search-dir-list "c:/tanemura_work/source/BESTEM/controller/src/D01Np" 2))
+                                 '("C:/tanemura_work/source/BESTEM/controller/src/QNX" ("-L" "-k")))
+  (append-cscope-database-regexp "^c:/tanemura_work/source/BESTEM/controller/src/D01R"
+                                 (mapcar (lambda (x) (list x '("-L" "-k"))) (cscope-search-dir-list "c:/tanemura_work/source/BESTEM/controller/src/D01R" 2))
+                                 '("C:/tanemura_work/source/BESTEM/controller/src/QNX" ("-L" "-k")))
+  (append-cscope-database-regexp "^c:/tanemura_work/source/BESTEM/controller/src/D01"
+                                 (mapcar (lambda (x) (list x '("-L" "-k"))) (cscope-search-dir-list "c:/tanemura_work/source/BESTEM/controller/src/D01" 2))
+                                 '("C:/tanemura_work/source/BESTEM/controller/src/QNX" ("-L" "-k")))
+  (append-cscope-database-regexp "^c:/tanemura_work/source/BESTEM/controller/src/D02"
+                                 (mapcar (lambda (x) (list x '("-L" "-k"))) (cscope-search-dir-list "c:/tanemura_work/source/BESTEM/controller/src/D02" 2))
+                                 '("C:/tanemura_work/source/BESTEM/controller/src/QNX" ("-L" "-k")))
+  (append-cscope-database-regexp "^c:/tanemura_work/source/BESTEM/controller/src/D03Hp"
+                                 (mapcar (lambda (x) (list x '("-L" "-k"))) (cscope-search-dir-list "c:/tanemura_work/source/BESTEM/controller/src/D03Hp" 2))
+                                 '("C:/tanemura_work/source/BESTEM/controller/src/QNX" ("-L" "-k")))
+  )
 
 ;; dired ftp address
 (setq dired-copy-remote-file-table
@@ -67,16 +88,25 @@
       (append (list
                '(top . 0)
                '(left . 0)
-               '(width . 179)
-               '(height . 52)
+               '(width . 156)
+               '(height . 49)
 
-               '(font . "ms-gothic 14+")
                '(cursor-color . "deep pink")
                '(cursor-type . box)
                '(cursor-height . 4)
 
                )
               initial-frame-alist))
+(set-language-environment "Japanese")
+
+;; NagaIGyou woORiKaeSazuniHyouzi suru.
+(setq-default truncate-lines t)
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; open directory
+(defun open-directory (dir)
+  (interactive "DDirectory? ")
+  (shell-command (concat "cygstart " "\"" (expand-file-name dir) "\"")))
 
 ;; info
 ;; (defadvice info-initialize
@@ -125,7 +155,8 @@
 
 ;; initial screen
 (when (locate-library "org")
-  (setq org-agenda-files (append org-agenda-files (list (concat org-directory "nippou.org"))))
+  (setq org-agenda-files (concat org-directory "nippou.org"))
+  (setq org-default-notes-file org-agenda-files)
   (find-file org-default-notes-file))
 
 (provide 'init-1H1_1034)

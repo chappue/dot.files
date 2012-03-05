@@ -7,9 +7,7 @@
   (add-to-list 'auto-mode-alist '("\\.org$" . org-mode))
   (setq org-startup-truncated nil)
   (setq org-return-follows-link t)
-  (setq org-directory "~/.emacs.d/org/")
-  (setq org-default-notes-file (concat org-directory "work.org"))
-  (setq org-agenda-files (list org-default-notes-file))
+  (setq org-directory "~/.emacs.d/var/org/")
   (define-key mode-specific-map "a" 'org-agenda)
 
   (setq org-use-fast-todo-selection t)
