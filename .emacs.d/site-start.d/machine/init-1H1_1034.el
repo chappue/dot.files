@@ -3,20 +3,20 @@
 ;; FONTS
 (when (>= emacs-major-version 23)
  (set-face-attribute 'default nil
-                     :family "‚l‚r ƒSƒVƒbƒN"
+                     :family "ï¼­ï¼³ ã‚´ã‚·ãƒƒã‚¯"
                      :height 110)
  (set-fontset-font
   (frame-parameter nil 'font)
   'japanese-jisx0208
-  '("‚l‚r ƒSƒVƒbƒN" . "iso10646-1"))
+  '("ï¼­ï¼³ ã‚´ã‚·ãƒƒã‚¯" . "iso10646-1"))
  (set-fontset-font
   (frame-parameter nil 'font)
   'japanese-jisx0212
-  '("‚l‚r ƒSƒVƒbƒN" . "iso10646-1"))
+  '("ï¼­ï¼³ ã‚´ã‚·ãƒƒã‚¯" . "iso10646-1"))
  (set-fontset-font
   (frame-parameter nil 'font)
   'mule-unicode-0100-24ff
-  '("‚l‚r ƒSƒVƒbƒN" . "iso10646-1"))
+  '("ï¼­ï¼³ ã‚´ã‚·ãƒƒã‚¯" . "iso10646-1"))
  )
 
 (when (locate-library "xcscope")

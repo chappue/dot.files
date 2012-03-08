@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: errl
+# key: errl
+# --
+' CKT059 ADD START
+    Exit Function
+ErrorHandler:
+    Call PutErrLog("Err.Number ="+Str(Err.Number)+" @`(file-name-nondirectory (buffer-file-name))` `(which-function)`()"+vbCrLf)
+    Resume Next
+' CKT059 ADD END
