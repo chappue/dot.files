@@ -3,10 +3,9 @@ all:
 
 .PHONY : update
 update:
-	svn update
-	find . -type d -name ".svn" -prune -o -type f -and -regex "^\./\..*" -exec cp ~/{} {} \;
+	find . -type d \( -name ".git" -o -name "local-lisp" -o -name "var" -o -name "server" \) -prune -o -type d -and -regex "^\./\..*" -exec echo ~/{} {} \;
 	svn status
 
 .PHONY : install
 install: $(FILES)
-	find . -type d -name ".svn" -prune -o -type f -and -regex "^\./\..*" -exec cp {} ~/{} \;
+	find . -type d -name ".git" -prune -o -type f -and -regex "^\./\..*" -exec cp {} ~/{} \;

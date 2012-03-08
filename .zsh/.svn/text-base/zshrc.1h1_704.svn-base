@@ -1,8 +1,0 @@
-# zshrc.1h1_704 -*- Mode: shell-script; coding: euc-jp; -*-
-
-#_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
-# path
-
-  PATH="$PATH:c:/tanemura_work/source/script"
-
-

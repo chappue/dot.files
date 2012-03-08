@@ -173,6 +173,9 @@
 ;; popwin
 (require 'init-popwin)
 
+;; find-file
+(require 'init-find-file)
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; os specifcation
 (cond ((or darwin-p mac-p carbon-p) (require 'init-mac))
