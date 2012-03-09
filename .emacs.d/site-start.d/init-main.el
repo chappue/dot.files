@@ -176,6 +176,9 @@
 ;; find-file
 (require 'init-find-file)
 
+;; cycle-buffer
+(require 'init-cycle-buffer)
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; os specifcation
 (cond ((or darwin-p mac-p carbon-p) (require 'init-mac))

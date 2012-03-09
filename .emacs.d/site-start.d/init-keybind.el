@@ -58,4 +58,11 @@
 (global-unset-key "\C-x\C-c")
 (define-key global-map "\C-x\M-c" 'save-buffers-kill-emacs)
 
+
+;; kill-buffer
+(defun kill-buffer-force ()
+  (interactive)
+  (kill-buffer (buffer-name)))
+(define-key global-map "\C-xk" 'kill-buffer-force)
+
 (provide 'init-keybind)

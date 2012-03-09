@@ -153,6 +153,15 @@
   (interactive (list (read-string "Search String: " (moccur-extract-symbol-at-cursor))))
   (moccur-grep-find default-directory (list search "\\.[hcbf][par]?[psm]?$")))
 
+;; recentf
+(setq recentf-exclude '("\\(\.howm$\\|~$\\)" "^//"
+                        "^c:/Documents and Settings/0096913/デスクトップ"
+                        "^c:/tanemura_work/source/misc"
+                        "^C:/Program Files/MMI-TEST-"
+                        "^C:/Program Files/MMI-TEST("
+                        "^[^C]"
+                        "^c:/tanemura_work/document/work"))
+
 ;; initial screen
 (when (locate-library "org")
   (setq org-agenda-files (concat org-directory "nippou.org"))
