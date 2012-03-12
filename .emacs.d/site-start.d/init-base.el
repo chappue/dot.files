@@ -36,8 +36,8 @@
 ;; filename patterns vs corresponding major mode functions
 (setq auto-mode-alist
       (append
-       '(("\\.h$" . c-mode)
-         ("\\.c$" . c-mode)
+       '(("\\.h$" . c++-mode)
+         ("\\.c$" . c++-mode)
          ("\\.hpp$" . c++-mode)
          ("\\.perl$" . cperl-mode)
          ("\\.p[hlm]$" . cperl-mode)
@@ -136,6 +136,7 @@
 (setq enable-local-variables 'query)
 
 ;;; mode-line setting
+(setq display-time-string-forms '(month "/" day "(" dayname ")" 24-hours ":" minutes))
 (setq-default mode-line-format
               '("-"
                 mode-line-mule-info
