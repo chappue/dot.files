@@ -179,6 +179,9 @@
 ;; cycle-buffer
 (require 'init-cycle-buffer)
 
+;; newcomment
+(require 'init-newcomment)
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; os specifcation
 (cond ((or darwin-p mac-p carbon-p) (require 'init-mac))

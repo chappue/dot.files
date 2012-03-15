@@ -53,7 +53,7 @@
         (arglist-close          . c-lineup-arglist)
         (substatement-open      . 0)
         (statement-cont         . 0)
-        (case-label             . +)
+        (case-label             . 0)
         (statement-case-intro   . +)
         (statement-case-open    . +)
         (label                  . 0)
