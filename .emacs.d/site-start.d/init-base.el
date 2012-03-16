@@ -13,6 +13,8 @@
 (setq delete-auto-save-file t)
 (setq auto-save-default nil)
 (auto-save-mode -1)
+(setq auto-save-list-file-name nil)
+(setq auto-save-list-file-prefix nil)
 ;; Don't create file~
 (setq backup-inhibited t)
 (setq make-backup-files nil)
