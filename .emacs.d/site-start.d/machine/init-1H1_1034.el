@@ -160,7 +160,8 @@
                         "^C:/Program Files/MMI-TEST-"
                         "^C:/Program Files/MMI-TEST("
                         "^[^C]"
-                        "^c:/tanemura_work/document/work"))
+                        "^c:/tanemura_work/document/work"
+                        "^C:/Program Files/MMI/PRO-D1/WinMMI/GUI"))
 
 ;; initial screen
 (when (locate-library "org")

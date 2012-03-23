@@ -8,7 +8,7 @@
   (setq recentf-save-file "~/.emacs.d/var/.recentf"
         recentf-auto-cleanup 'never
         recentf-max-menu-items 10
-        recentf-max-saved-items 1000
+        recentf-max-saved-items 5000
         recentf-auto-save-timer (run-with-idle-timer 30 t 'recentf-save-list))
 
   (recentf-mode 1)
