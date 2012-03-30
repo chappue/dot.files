@@ -182,6 +182,12 @@
 ;; newcomment
 (require 'init-newcomment)
 
+;; japanese-holidays
+(require 'init-japanese-holidays)
+
+;; bookmark
+(require 'init-bookmark)
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; os specifcation
 (cond ((or darwin-p mac-p carbon-p) (require 'init-mac))

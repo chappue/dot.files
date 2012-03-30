@@ -22,15 +22,18 @@
     (beginning-of-line)
     )
 
-  (defadvice moccur-next-file (around alt-moccur-next-file act)
+  (defadvice moccur-next-file (around alt-moccur-next-file activate)
     (alt-moccur-next-file))
 
   (defun alt-moccur-prev-file()
     (interactive)
     (re-search-backward "^[-+ ]*Buffer: " nil t))
 
-  (defadvice moccur-prev-file (around alt-moccur-prev-file act)
+  (defadvice moccur-prev-file (around alt-moccur-prev-file activate)
     (alt-moccur-prev-file))
+
+  (defadvice moccur-grep-goto (after moccur-grep-goto-quit last activate)
+    (delete-other-windows))
   )
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;

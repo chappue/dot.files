@@ -219,7 +219,3 @@
   (setq woman-use-own-frame nil)
   )
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; bookmark
-(when (locate-library "bookmark")
-  (setq bookmark-default-file "~/.emacs.d/var/.emacs_bmk"))

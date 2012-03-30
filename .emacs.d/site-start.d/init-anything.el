@@ -22,7 +22,6 @@
   (define-key global-map [?\C-\;] 'anything-key-map)
   (define-key anything-key-map [?\C-\;] 'anything-execute-anything-command)
   (define-key anything-key-map "\C-f" 'anything-filelist+)
-  (define-key anything-key-map "\C-b" 'anything-bookmarks)
   (define-key anything-key-map "\C-i" 'anything-imenu)
   (define-key anything-key-map "\C-y" 'anything-show-kill-ring)
   (define-key anything-key-map "\C-e" 'anything-M-x)
