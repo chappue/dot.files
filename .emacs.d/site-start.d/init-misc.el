@@ -45,8 +45,6 @@
 (add-hook 'minibuffer-setup-hook 'minibuffer-delete-duplicate)
 
 
-
-
 ;;_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
 ;;                       misc function
 ;;------------------------------------------------------------------
@@ -276,4 +274,3 @@
 (defun time-to-sec(str)
   (let ((time-str (mapcar 'string-to-int (split-string (replace str ":" :start1 8) ":"))))
     (+ (* (* 60.0 60.0) (nth 0 time-str)) (* 60.0 (nth 1 time-str)) (nth 2 time-str) (/ (nth 3 time-str) 1000.0))))
-

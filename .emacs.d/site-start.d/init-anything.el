@@ -17,6 +17,8 @@
   (and (equal current-language-environment "Japanese")
        (require 'anything-migemo nil t))
 
+  (setq anything-kill-ring-threshold 5)
+
   (setq anything-c-adaptive-history-file "~/.emacs.d/var/anything-c-adaptive-history")
   (define-prefix-command 'anything-key-map)
   (define-key global-map [?\C-\;] 'anything-key-map)

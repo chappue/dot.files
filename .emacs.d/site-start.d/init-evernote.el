@@ -8,6 +8,9 @@
   (global-set-key "\C-ceS" 'evernote-do-saved-search)
   (global-set-key "\C-cew" 'evernote-write-note)
   (global-set-key "\C-cep" 'evernote-post-region)
+  (when (locate-library "cygwin-mount")
+    (require 'cygwin-mount)
+    (cygwin-mount-activate))
   )
 
 (provide 'init-evernote)

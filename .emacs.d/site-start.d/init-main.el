@@ -156,7 +156,7 @@
 (require 'init-visual-basic)
 
 ;; auto-install
-(require 'init-auto-install)
+;; (require 'init-auto-install)
 
 ;; deferred
 (require 'init-deferred)
@@ -187,6 +187,21 @@
 
 ;; bookmark
 (require 'init-bookmark)
+
+;; package
+(require 'init-package)
+
+;; smartrep
+(require 'init-smartrep)
+
+;; expand-region
+(require 'init-expand-region)
+
+;; webjump
+(require 'init-webjump)
+
+;; mark-multiple
+(require 'init-mark-multiple)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; os specifcation
