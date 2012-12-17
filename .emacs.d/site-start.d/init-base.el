@@ -20,8 +20,8 @@
 (setq make-backup-files nil)
 
 ;; insert new-line where end of file
-(setq require-final-newline t)
-(setq mode-require-final-newline t)
+(setq require-final-newline nil)
+(setq mode-require-final-newline nil)
 (setq next-line-add-newlines nil)
 
 ;; Switching Between Buffers using Substrings

@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: debug_log
+# key: dlog
+# note: clsLog.WriteLog("$$$ file-name(line) \n");
+# --
+clsLog.WriteLog("$$$ `(buffer-file-name)`(`(current-line)`) $0\n");

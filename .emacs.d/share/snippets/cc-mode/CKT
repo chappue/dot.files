@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: CKT
+# key: ckt
+# expand-env: ((yas-indent-line 'fixed) (yas-wrap-around-region nil))
+# --
+`comment-start`CKT${1:000} ${2:ADD$(yas-choose-value '("ADD" "MOD" "DEL"))} START$0`(if (< 0 (length yas-selected-text)) (concat "\n" yas-selected-text))`
+`comment-start`CKT$1 $2 END

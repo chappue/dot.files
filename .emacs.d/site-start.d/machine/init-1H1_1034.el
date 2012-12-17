@@ -14,7 +14,7 @@
   'japanese-jisx0212
   '("ＭＳ ゴシック" . "iso10646-1"))
  (set-fontset-font
-  (frame-parameter nil 'font)
+  (frame-parameter nil 'FONT)
   'mule-unicode-0100-24ff
   '("ＭＳ ゴシック" . "iso10646-1"))
  )
@@ -151,7 +151,7 @@
     ))
 (defun moccur-grep-find-source (search)
   (interactive (list (read-string "Search String: " (moccur-extract-symbol-at-cursor))))
-  (moccur-grep-find default-directory (list search "\\.[hcbf][par]?[psm]?$")))
+  (moccur-grep-find default-directory (list search "\\.[hcbf][parl]?[psm]?$")))
 
 ;; recentf
 (setq recentf-exclude '("\\(\.howm$\\|~$\\)" "^//"
@@ -159,9 +159,22 @@
                         "^c:/tanemura_work/source/misc"
                         "^C:/Program Files/MMI-TEST-"
                         "^C:/Program Files/MMI-TEST("
+                        "^C:/Program Files/MMI-TEST_"
                         "^[^C]"
                         "^c:/tanemura_work/document/work"
                         "^C:/Program Files/MMI/PRO-D1/WinMMI/GUI"))
+
+;; copy file when edit file in GUI folder
+(defun file-mirror-copy()
+             (interactive)
+             (let ((base-name (file-name-nondirectory buffer-file-name))
+                   (dir-name (file-name-directory buffer-file-name)))
+               (if (equal (string-match "c:/Program Files/MMI-TEST/PRO-D1/WinMMI/GUI/" dir-name) 0)
+                   (copy-file buffer-file-name (concat "C:/Program Files/MMI/PRO-D1/WinMMI/GUI/" base-name) t)
+                 )))
+(add-hook 'after-save-hook
+          'file-mirror-copy)
+
 
 ;; initial screen
 (when (locate-library "org")

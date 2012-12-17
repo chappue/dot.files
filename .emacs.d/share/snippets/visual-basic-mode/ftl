@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: ftl
+# key: ftl
+# --
+Call GuiLogWrite("$$$hack `(file-name-nondirectory (buffer-file-name))` `(which-function)`"+vbCrLf)

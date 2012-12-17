@@ -1,3 +1,0 @@
-#name : tlog
-# --
-$0g_clsLogMng.WriteLog("`(my-which-function)`"); //@@@hack

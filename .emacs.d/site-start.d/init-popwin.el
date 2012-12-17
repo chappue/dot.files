@@ -13,6 +13,11 @@
     (push '("*anything imenu*" :height 40) popwin:special-display-config)
     )
 
+  ;; cscope
+  (when (locate-library "cscope")
+    (push '("*cscope*" :height 40) popwin:special-display-config)
+    )
+
   ;; dired
   (push '(dired-mode :position top) popwin:special-display-config)
 

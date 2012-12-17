@@ -1,9 +1,0 @@
-# -*- mode: snippet -*-
-# name: foo
-# key: foo
-# --
-    // ${1:DID_START} -> ${2:DID_END}
-    ::CopyMemory( &pParametersR8[R8_$1],
-                  &pParametersR7[R7_$1],
-                  reinterpret_cast<PCHAR>(&pParametersR7[R7_$2])
-                   - reinterpret_cast<PCHAR>(&pParametersR7[R7_$1]) );

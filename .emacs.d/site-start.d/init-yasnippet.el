@@ -8,6 +8,7 @@
   (setq yas-snippet-dirs
         (append '("~/.emacs.d/share/snippets") (cdr yas-snippet-dirs)))
   (yas-global-mode 1)
+  (custom-set-variables '(yas/wrap-around-region t))
   (define-key global-map [?\C-\:] 'yas-expand)
 
   ;; anything interface

@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: guilog
+# key: log
+# --
+GuiLogWrite("$$$hack $0"+vbCrLf)

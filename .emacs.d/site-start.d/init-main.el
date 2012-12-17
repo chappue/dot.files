@@ -101,7 +101,7 @@
 ;; keisen
 (require 'init-keisen)
 
-;; for pho language
+;; for php language
 (require 'init-php)
 
 ;; for ruby language
@@ -202,6 +202,12 @@
 
 ;; mark-multiple
 (require 'init-mark-multiple)
+
+;; auto-complete
+(require 'init-auto-complete)
+
+;; ace-jump
+(require 'init-ace-jump-mode)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; os specifcation
